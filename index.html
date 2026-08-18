@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ORMTube — Professional Audio & MP3 Engine</title>
+    <meta name="description" content="ORMTube: Studio-grade YouTube to MP3 converter and lossless audio processing suite." />
+    <script>
+      (function() {
+        try {
+          const originalFetch = window.fetch ? window.fetch.bind(window) : undefined;
+          let currentFetch = originalFetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return currentFetch;
+            },
+            set: function(fn) {
+              currentFetch = fn;
+            },
+            configurable: true,
+            enumerable: true,
+          });
+        } catch (err) {
+          // Ignore if environment forbids redefinition
+        }
+      })();
+    </script>
+    <meta property="og:title" content="ORMTube — Professional Audio & MP3 Engine" />
+    <meta property="og:description" content="Studio-grade YouTube to MP3 converter and lossless audio processing suite." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

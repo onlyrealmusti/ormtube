@@ -1,0 +1,6 @@
+{
+  "name": "ORMTube",
+  "description": "Professional YouTube to MP3 & audio conversion engine with studio-grade audio processing, ID3 tagging, and local file transcoding.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
